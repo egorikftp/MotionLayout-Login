@@ -35,11 +35,15 @@ class MainActivity : AppCompatActivity() {
         }
 
         scene_5.setOnClickListener {
+            startMotionActivity(R.layout.scene_5_final)
+        }
+
+        scene_6.setOnClickListener {
             startMotionActivity(R.layout.motion_in_progress)
         }
 
         Handler().post {
-            //scene_4.performClick()
+            scene_6.performClick()
         }
     }
 

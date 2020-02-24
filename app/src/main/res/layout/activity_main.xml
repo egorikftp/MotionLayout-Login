@@ -40,5 +40,10 @@
             android:id="@+id/scene_5"
             style="@style/ButtonStyle"
             android:text="Scene 5 (Input Sign In)" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/scene_6"
+            style="@style/ButtonStyle"
+            android:text="Scene 6 (?)" />
     </LinearLayout>
 </androidx.core.widget.NestedScrollView>
