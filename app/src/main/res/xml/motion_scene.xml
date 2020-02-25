@@ -37,7 +37,7 @@
 
             <KeyAttribute
                 android:alpha="0"
-                motion:framePosition="30"
+                motion:framePosition="10"
                 motion:motionTarget="@+id/forgot_password" />
 
             <KeyPosition
@@ -146,7 +146,7 @@
         <Constraint android:id="@+id/forgot_password">
 
             <Layout
-                android:layout_width="wrap_content"
+                android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="50dp"
                 motion:layout_constraintEnd_toEndOf="@+id/login_password"
@@ -306,7 +306,7 @@
         <Constraint android:id="@+id/forgot_password">
 
             <Layout
-                android:layout_width="wrap_content"
+                android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="50dp"
                 motion:layout_constraintEnd_toEndOf="@+id/login_password"

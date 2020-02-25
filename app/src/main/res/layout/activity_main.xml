@@ -14,32 +14,32 @@
         <com.google.android.material.button.MaterialButton
             android:id="@+id/scene_0"
             style="@style/ButtonStyle"
-            android:text="Scene 1 (initial)" />
+            android:text="Scene 0 (initial)" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/scene_1"
             style="@style/ButtonStyle"
-            android:text="Scene 1 (with text)" />
+            android:text="Scene 1 (Add Text)" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/scene_2"
             style="@style/ButtonStyle"
-            android:text="Scene 2 (swipes)" />
+            android:text="Scene 2 (Swipes)" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/scene_3"
             style="@style/ButtonStyle"
-            android:text="Scene 3 (Image)" />
+            android:text="Scene 3 (ImageFilterView)" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/scene_4"
             style="@style/ButtonStyle"
-            android:text="Scene 4 (Input Login)" />
+            android:text="Scene 4 (Input for Login)" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/scene_5"
             style="@style/ButtonStyle"
-            android:text="Scene 5 (Input Sign In)" />
+            android:text="Scene 5 (Input for Sign In)" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/scene_6"

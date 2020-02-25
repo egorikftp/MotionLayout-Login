@@ -28,7 +28,8 @@
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="textEmailAddress" />
+            android:inputType="textEmailAddress"
+            android:textColor="@color/White" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -44,7 +45,8 @@
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="textPassword" />
+            android:inputType="textPassword"
+            android:textColor="@color/White" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
@@ -52,6 +54,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:singleLine="true"
         android:text="Forgot password?"
         android:textColor="@color/White"
         app:layout_constraintEnd_toEndOf="@+id/login_password"

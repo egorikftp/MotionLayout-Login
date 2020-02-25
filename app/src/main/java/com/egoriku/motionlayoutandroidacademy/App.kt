@@ -28,6 +28,8 @@ class App : Application() {
                     Beagle.currentActivity?.let { activity ->
                         activity.findViewById<MotionLayout>(R.id.motionLayout)
                             ?.setDebugMode(it.value)
+
+                        Beagle.dismiss(activity)
                     }
                 }
             )

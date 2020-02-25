@@ -2,11 +2,11 @@ package com.egoriku.motionlayoutandroidacademy
 
 import android.content.Intent
 import android.os.Bundle
-import android.os.Handler
 import androidx.annotation.LayoutRes
 import androidx.appcompat.app.AppCompatActivity
 import com.egoriku.motionlayoutandroidacademy.common.LAYOUT_ID
 import kotlinx.android.synthetic.main.activity_main.*
+
 
 class MainActivity : AppCompatActivity() {
 
@@ -41,10 +41,6 @@ class MainActivity : AppCompatActivity() {
         scene_6.setOnClickListener {
             startMotionActivity(R.layout.motion_in_progress)
         }
-
-        Handler().post {
-            scene_6.performClick()
-        }
     }
 
     private fun startMotionActivity(@LayoutRes layoutId: Int) {
@@ -55,5 +51,3 @@ class MainActivity : AppCompatActivity() {
         )
     }
 }
-
-
