@@ -7,15 +7,10 @@ import androidx.appcompat.app.AppCompatActivity
 import com.egoriku.motionlayoutandroidacademy.common.LAYOUT_ID
 import kotlinx.android.synthetic.main.activity_main.*
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity(R.layout.activity_main) {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
-
-        scene_0.setOnClickListener {
-            startMotionActivity(R.layout.scene_0_final)
-        }
 
         scene_1.setOnClickListener {
             startMotionActivity(R.layout.scene_1_final)
@@ -38,6 +33,18 @@ class MainActivity : AppCompatActivity() {
         }
 
         scene_6.setOnClickListener {
+            startMotionActivity(R.layout.scene_6_final)
+        }
+
+        scene_7.setOnClickListener {
+            startMotionActivity(R.layout.scene_7_final)
+        }
+
+        scene_8.setOnClickListener {
+            startMotionActivity(R.layout.scene_8_final)
+        }
+
+        scene_9.setOnClickListener {
             startMotionActivity(R.layout.motion_in_progress)
         }
     }

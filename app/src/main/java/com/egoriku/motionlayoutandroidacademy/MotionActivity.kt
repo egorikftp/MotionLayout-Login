@@ -10,9 +10,7 @@ import kotlinx.android.synthetic.main.motion_in_progress.*
 
 class MotionActivity : AppCompatActivity() {
 
-    private val Bundle.layoutId: Int by BundleDelegate.Int(
-        LAYOUT_ID
-    )
+    private val Bundle.layoutId: Int by BundleDelegate.Int(LAYOUT_ID)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -21,7 +19,7 @@ class MotionActivity : AppCompatActivity() {
 
         setContentView(layoutId)
 
-        if (layoutId == R.layout.scene_6_final) {
+        if (layoutId == R.layout.scene_8_final) {
             motionLayout.setTransitionListener(object : TransitionAdapter() {
 
                 override fun onTransitionChange(

@@ -66,59 +66,7 @@
         android:id="@+id/sign_up_root"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@color/colorPrimary" />
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/sign_up_email"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="70dp"
-        android:hint="Email"
-        android:textColorHint="@color/White"
-        app:boxStrokeColor="@color/selector_text_input_layout_border"
-        app:hintTextColor="@color/White">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="textEmailAddress"
-            android:textColor="@color/White" />
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/sign_up_password"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:hint="Password"
-        android:textColorHint="@color/White"
-        app:boxStrokeColor="@color/selector_text_input_layout_border"
-        app:hintTextColor="@color/White">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="textPassword"
-            android:textColor="@color/White" />
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/sign_up_confirm_password"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:hint="Confirm Password"
-        android:textColorHint="@color/White"
-        app:boxStrokeColor="@color/selector_text_input_layout_border"
-        app:hintTextColor="@color/White">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="textPassword"
-            android:textColor="@color/White" />
-    </com.google.android.material.textfield.TextInputLayout>
+        android:background="@color/colorSignInSection" />
 
     <androidx.constraintlayout.utils.widget.ImageFilterView
         android:id="@+id/logo"

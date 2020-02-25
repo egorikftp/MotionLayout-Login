@@ -45,10 +45,82 @@
                 motion:keyPositionType="pathRelative"
                 motion:motionTarget="@+id/forgot_password"
                 motion:percentX="0.5" />
+
+            <KeyAttribute
+                android:alpha="0"
+                motion:framePosition="70"
+                motion:motionTarget="@+id/sign_up_email" />
+
+            <KeyPosition
+                motion:framePosition="70"
+                motion:keyPositionType="pathRelative"
+                motion:motionTarget="@+id/sign_up_email"
+                motion:percentX="0.5" />
+
+            <KeyAttribute
+                android:alpha="0"
+                motion:framePosition="70"
+                motion:motionTarget="@+id/sign_up_password" />
+
+            <KeyPosition
+                motion:framePosition="70"
+                motion:keyPositionType="pathRelative"
+                motion:motionTarget="@+id/sign_up_password"
+                motion:percentX="0.5" />
+
+            <KeyAttribute
+                android:alpha="0"
+                motion:framePosition="70"
+                motion:motionTarget="@+id/sign_up_confirm_password" />
+
+            <KeyPosition
+                motion:framePosition="70"
+                motion:keyPositionType="pathRelative"
+                motion:motionTarget="@+id/sign_up_confirm_password"
+                motion:percentX="0.5" />
         </KeyFrameSet>
     </Transition>
 
     <ConstraintSet android:id="@+id/start">
+        <Constraint android:id="@+id/sign_up_email">
+            <Layout
+                android:layout_width="250dp"
+                android:layout_marginTop="70dp"
+                motion:layout_constraintEnd_toEndOf="@+id/sign_up_root"
+                motion:layout_constraintStart_toStartOf="@+id/sign_up_root"
+                motion:layout_constraintTop_toBottomOf="@+id/logo" />
+
+            <PropertySet
+                android:alpha="0"
+                android:visibility="invisible" />
+        </Constraint>
+
+        <Constraint android:id="@+id/sign_up_password">
+            <Layout
+                android:layout_width="250dp"
+                android:layout_marginTop="16dp"
+                motion:layout_constraintEnd_toEndOf="@+id/sign_up_root"
+                motion:layout_constraintStart_toStartOf="@+id/sign_up_root"
+                motion:layout_constraintTop_toBottomOf="@+id/sign_up_email" />
+
+            <PropertySet
+                android:alpha="0"
+                android:visibility="invisible" />
+        </Constraint>
+
+        <Constraint android:id="@+id/sign_up_confirm_password">
+            <Layout
+                android:layout_width="250dp"
+                android:layout_marginTop="16dp"
+                motion:layout_constraintEnd_toEndOf="@+id/sign_up_root"
+                motion:layout_constraintStart_toStartOf="@+id/sign_up_root"
+                motion:layout_constraintTop_toBottomOf="@+id/sign_up_password" />
+
+            <PropertySet
+                android:alpha="0"
+                android:visibility="invisible" />
+        </Constraint>
+
         <Constraint android:id="@+id/login_email">
             <Layout
                 android:layout_width="250dp"
@@ -165,6 +237,46 @@
     </ConstraintSet>
 
     <ConstraintSet android:id="@+id/end">
+        <Constraint android:id="@+id/sign_up_email">
+            <Layout
+                android:layout_width="250dp"
+                android:layout_marginTop="70dp"
+                motion:layout_constraintEnd_toEndOf="@+id/sign_up_root"
+                motion:layout_constraintStart_toStartOf="@+id/sign_up_root"
+                motion:layout_constraintTop_toBottomOf="@+id/logo" />
+
+            <PropertySet
+                android:alpha="1"
+                android:visibility="visible" />
+        </Constraint>
+
+        <Constraint android:id="@+id/sign_up_password">
+            <Layout
+                android:layout_width="250dp"
+                android:layout_marginTop="16dp"
+                motion:layout_constraintEnd_toEndOf="@+id/sign_up_root"
+                motion:layout_constraintStart_toStartOf="@+id/sign_up_root"
+                motion:layout_constraintTop_toBottomOf="@+id/sign_up_email" />
+
+            <PropertySet
+                android:alpha="1"
+                android:visibility="visible" />
+        </Constraint>
+
+        <Constraint android:id="@+id/sign_up_confirm_password">
+            <Layout
+                android:layout_width="250dp"
+                android:layout_marginTop="16dp"
+                motion:layout_constraintEnd_toEndOf="@+id/sign_up_root"
+                motion:layout_constraintStart_toStartOf="@+id/sign_up_root"
+                motion:layout_constraintTop_toBottomOf="@+id/sign_up_password" />
+
+            <PropertySet
+                android:alpha="1"
+                android:visibility="visible" />
+        </Constraint>
+
+
         <Constraint android:id="@+id/login_email">
             <Layout
                 android:layout_width="250dp"
