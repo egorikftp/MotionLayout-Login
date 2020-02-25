@@ -5,7 +5,7 @@
     android:id="@+id/motionLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    app:layoutDescription="@xml/motion_scene"
+    app:layoutDescription="@xml/scene_6"
     tools:ignore="HardcodedText">
 
     <View
