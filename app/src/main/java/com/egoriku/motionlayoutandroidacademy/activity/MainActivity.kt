@@ -1,9 +1,10 @@
-package com.egoriku.motionlayoutandroidacademy
+package com.egoriku.motionlayoutandroidacademy.activity
 
 import android.content.Intent
 import android.os.Bundle
 import androidx.annotation.LayoutRes
 import androidx.appcompat.app.AppCompatActivity
+import com.egoriku.motionlayoutandroidacademy.R
 import com.egoriku.motionlayoutandroidacademy.common.LAYOUT_ID
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -49,11 +50,9 @@ class MainActivity : AppCompatActivity(R.layout.activity_main) {
         }
     }
 
-    private fun startMotionActivity(@LayoutRes layoutId: Int) {
-        startActivity(
-            Intent(this, MotionActivity::class.java).apply {
-                putExtra(LAYOUT_ID, layoutId)
-            }
-        )
-    }
+    private fun startMotionActivity(@LayoutRes layoutId: Int) = startActivity(
+        Intent(this, MotionActivity::class.java).apply {
+            putExtra(LAYOUT_ID, layoutId)
+        }
+    )
 }

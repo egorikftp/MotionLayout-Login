@@ -1,9 +1,10 @@
-package com.egoriku.motionlayoutandroidacademy
+package com.egoriku.motionlayoutandroidacademy.activity
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.constraintlayout.motion.widget.MotionLayout
 import androidx.constraintlayout.motion.widget.TransitionAdapter
+import com.egoriku.motionlayoutandroidacademy.R
 import com.egoriku.motionlayoutandroidacademy.common.BundleDelegate
 import com.egoriku.motionlayoutandroidacademy.common.LAYOUT_ID
 import kotlinx.android.synthetic.main.motion_in_progress.*
