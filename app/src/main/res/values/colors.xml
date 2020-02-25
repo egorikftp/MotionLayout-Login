@@ -7,13 +7,6 @@
     <color name="colorLoginSection">#96B8B4</color>
     <color name="colorSignInSection">#514A72</color>
 
-    <color name="primaryColor">#c8e6c9</color>
-    <color name="primaryLightColor">#fbfffc</color>
-    <color name="primaryDarkColor">#97b498</color>
-    <color name="secondaryColor">#ffab91</color>
-    <color name="secondaryLightColor">#ffddc1</color>
-    <color name="secondaryDarkColor">#c97b63</color>
     <color name="White">#FFFFFF</color>
     <color name="Black">#040404</color>
-    <color name="Black70">#CD000000</color>
 </resources>

@@ -1,6 +1,7 @@
 package com.egoriku.motionlayoutandroidacademy.common
 
 import android.os.Bundle
+import android.view.View
 import kotlin.properties.ReadWriteProperty
 import kotlin.reflect.KProperty
 
@@ -15,4 +16,8 @@ sealed class BundleDelegate<T>(protected val key: String) : ReadWriteProperty<Bu
         override fun setValue(thisRef: Bundle, property: KProperty<*>, value: kotlin.Int) =
             thisRef.putInt(key, value)
     }
+}
+
+fun View.visible() {
+    if (visibility != View.VISIBLE) visibility = View.VISIBLE
 }

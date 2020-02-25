@@ -4,8 +4,10 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.annotation.LayoutRes
 import androidx.appcompat.app.AppCompatActivity
+import androidx.constraintlayout.motion.widget.MotionLayout
 import com.egoriku.motionlayoutandroidacademy.R
 import com.egoriku.motionlayoutandroidacademy.common.LAYOUT_ID
+import com.google.android.material.appbar.AppBarLayout
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity(R.layout.activity_main) {
@@ -48,6 +50,8 @@ class MainActivity : AppCompatActivity(R.layout.activity_main) {
         scene_9.setOnClickListener {
             startMotionActivity(R.layout.motion_in_progress)
         }
+
+        initCoordinatorWithMotion()
     }
 
     private fun startMotionActivity(@LayoutRes layoutId: Int) = startActivity(
@@ -55,4 +59,17 @@ class MainActivity : AppCompatActivity(R.layout.activity_main) {
             putExtra(LAYOUT_ID, layoutId)
         }
     )
+
+    private fun initCoordinatorWithMotion() {
+        val appBarLayout: AppBarLayout = findViewById(R.id.appbar_layout)
+        val motionLayout: MotionLayout = findViewById(R.id.motion_layout)
+
+        val listener = AppBarLayout.OnOffsetChangedListener { _, verticalOffset ->
+            val scrollPosition = -verticalOffset / appBarLayout.totalScrollRange.toFloat()
+
+            motionLayout.progress = scrollPosition
+        }
+
+        appBarLayout.addOnOffsetChangedListener(listener)
+    }
 }
