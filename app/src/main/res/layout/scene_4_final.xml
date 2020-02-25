@@ -5,13 +5,14 @@
     android:id="@+id/motionLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    app:layoutDescription="@xml/scene_4">
+    app:layoutDescription="@xml/scene_4"
+    tools:ignore="HardcodedText">
 
     <View
         android:id="@+id/login_root"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="#96B8B4" />
+        android:background="@color/colorLoginSection" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/login_email"
@@ -20,7 +21,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="70dp"
         android:hint="Email"
-        tools:ignore="HardcodedText">
+        android:textColorHint="@color/White"
+        app:boxStrokeColor="@color/selector_text_input_layout_border"
+        app:hintTextColor="@color/White">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
@@ -34,13 +37,14 @@
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:hint="Password"
-        tools:ignore="HardcodedText">
+        android:textColorHint="@color/White"
+        app:boxStrokeColor="@color/selector_text_input_layout_border"
+        app:hintTextColor="@color/White">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textPassword" />
-
     </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
@@ -49,7 +53,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
         android:text="Forgot password?"
-        android:textColor="#fff"
+        android:textColor="@color/White"
         app:layout_constraintEnd_toEndOf="@+id/login_password"
         app:layout_constraintStart_toStartOf="@+id/login_password"
         app:layout_constraintTop_toBottomOf="@id/login_password" />
@@ -58,14 +62,14 @@
         android:id="@+id/sign_up_root"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@color/colorPrimary" />
+        android:background="@color/colorSignInSection" />
 
     <androidx.constraintlayout.utils.widget.ImageFilterView
         android:id="@+id/logo"
         android:layout_width="130dp"
         android:layout_height="130dp"
         android:src="@drawable/ic_cat"
-        app:altSrc="@drawable/ic_catt_glasses" />
+        app:altSrc="@drawable/ic_cat_glasses" />
 
     <TextView
         android:id="@+id/login_text"
@@ -74,7 +78,7 @@
         android:gravity="center"
         android:singleLine="true"
         android:text="LOG IN"
-        android:textColor="#fff" />
+        android:textColor="@color/White" />
 
     <TextView
         android:id="@+id/sign_up_text"
@@ -83,6 +87,6 @@
         android:gravity="center"
         android:singleLine="true"
         android:text="SIGN UP"
-        android:textColor="#fff" />
+        android:textColor="@color/White" />
 
 </androidx.constraintlayout.motion.widget.MotionLayout>

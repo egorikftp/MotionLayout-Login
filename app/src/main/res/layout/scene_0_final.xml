@@ -10,12 +10,12 @@
         android:id="@+id/login_root"
         android:layout_width="0dp"
         android:layout_height="match_parent"
-        android:background="#96B8B4" />
+        android:background="@color/colorLoginSection" />
 
     <View
         android:id="@+id/sign_up_root"
         android:layout_width="0dp"
         android:layout_height="match_parent"
-        android:background="@color/colorPrimary" />
+        android:background="@color/colorSignInSection" />
 
 </androidx.constraintlayout.motion.widget.MotionLayout>
