@@ -20,13 +20,6 @@
         android:layout_height="wrap_content"
         android:background="@color/colorSignInSection" />
 
-    <androidx.constraintlayout.utils.widget.ImageFilterView
-        android:id="@+id/logo"
-        android:layout_width="130dp"
-        android:layout_height="130dp"
-        android:src="@drawable/ic_cat"
-        app:altSrc="@drawable/ic_cat_glasses" />
-
     <TextView
         android:id="@+id/login_text"
         android:layout_width="wrap_content"
@@ -44,5 +37,4 @@
         android:singleLine="true"
         android:text="SIGN UP"
         android:textColor="@color/White" />
-
 </androidx.constraintlayout.motion.widget.MotionLayout>

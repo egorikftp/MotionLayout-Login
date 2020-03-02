@@ -79,6 +79,14 @@ class MainActivity : AppCompatActivity(R.layout.activity_main) {
 
         }
 
+        scene_9.setOnClickListener {
+            startMotionActivity(R.layout.scene_9_final)
+        }
+
+        scene_9_todo.setOnClickListener {
+
+        }
+
         initCoordinatorWithMotion()
     }
 

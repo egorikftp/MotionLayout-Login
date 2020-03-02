@@ -166,6 +166,10 @@
                 motion:layout_constraintEnd_toStartOf="@+id/sign_up_root"
                 motion:layout_constraintStart_toStartOf="@+id/login_root"
                 motion:layout_constraintTop_toTopOf="parent" />
+
+            <CustomAttribute
+                motion:attributeName="crossfade"
+                motion:customFloatValue="0" />
         </Constraint>
 
         <Constraint
@@ -324,6 +328,10 @@
                 motion:layout_constraintEnd_toEndOf="parent"
                 motion:layout_constraintStart_toStartOf="@+id/sign_up_root"
                 motion:layout_constraintTop_toTopOf="parent" />
+
+            <CustomAttribute
+                motion:attributeName="crossfade"
+                motion:customFloatValue="1" />
         </Constraint>
 
         <Constraint

@@ -7,14 +7,17 @@
         motion:constraintSetStart="@id/start"
         motion:duration="300">
 
-        <OnSwipe
-            motion:dragDirection="dragLeft"
-            motion:onTouchUp="autoComplete"
-            motion:touchAnchorId="@id/sign_up_root"
-            motion:touchAnchorSide="left" />
+        <OnClick
+            motion:clickAction="toggle"
+            motion:targetId="@id/login_text" />
+
+        <OnClick
+            motion:clickAction="toggle"
+            motion:targetId="@id/sign_up_text" />
     </Transition>
 
     <ConstraintSet android:id="@+id/start">
+
         <Constraint
             android:id="@id/login_text"
             android:layout_width="250dp"
@@ -27,7 +30,7 @@
                 motion:layout_constraintTop_toTopOf="@+id/login_root"
                 motion:layout_constraintVertical_bias="0.8" />
 
-            <Transform android:rotation="0" />
+             <Transform android:rotation="0" />
 
             <CustomAttribute
                 motion:attributeName="textSize"

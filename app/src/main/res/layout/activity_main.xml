@@ -74,7 +74,7 @@
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/scene_2"
                     style="@style/ButtonStyleFinal"
-                    android:text="Scene 2 \n(Add Text)" />
+                    android:text="Scene 2 \n(Text Rotation)" />
 
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/scene_2_todo"
@@ -91,7 +91,7 @@
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/scene_3"
                     style="@style/ButtonStyleFinal"
-                    android:text="Scene 3 \n(Swipes)" />
+                    android:text="Scene 3 \n(Text Size)" />
 
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/scene_3_todo"
@@ -108,7 +108,7 @@
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/scene_4"
                     style="@style/ButtonStyleFinal"
-                    android:text="Scene 4 (ImageFilterView)" />
+                    android:text="Scene 4 \n(Swipes)" />
 
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/scene_4_todo"
@@ -125,7 +125,7 @@
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/scene_5"
                     style="@style/ButtonStyleFinal"
-                    android:text="Scene 5 \n(Input for Login)" />
+                    android:text="Scene 5 (ImageFilterView)" />
 
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/scene_5_todo"
@@ -142,7 +142,7 @@
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/scene_6"
                     style="@style/ButtonStyleFinal"
-                    android:text="Scene 6 \n(Add KeyFrameSet)" />
+                    android:text="Scene 6 \n(Input for Login)" />
 
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/scene_6_todo"
@@ -159,7 +159,7 @@
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/scene_7"
                     style="@style/ButtonStyleFinal"
-                    android:text="Scene 7 \n(Input for Sign In)" />
+                    android:text="Scene 7 \n(Add KeyFrameSet)" />
 
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/scene_7_todo"
@@ -176,13 +176,30 @@
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/scene_8"
                     style="@style/ButtonStyleFinal"
-                    android:text="Scene 8 \n(Transition listener)" />
+                    android:text="Scene 8 \n(Input for Sign In)" />
 
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/scene_8_todo"
                     style="@style/ButtonStyleTodo"
                     android:layout_gravity="center_vertical"
                     android:text="Scene 8 (TODO)" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/scene_9"
+                    style="@style/ButtonStyleFinal"
+                    android:text="Scene 9 \n(Transition listener)" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/scene_9_todo"
+                    style="@style/ButtonStyleTodo"
+                    android:layout_gravity="center_vertical"
+                    android:text="Scene 9 (TODO)" />
             </LinearLayout>
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>

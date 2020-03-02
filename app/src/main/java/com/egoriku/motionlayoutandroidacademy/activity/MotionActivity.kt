@@ -7,7 +7,7 @@ import androidx.constraintlayout.motion.widget.TransitionAdapter
 import com.egoriku.motionlayoutandroidacademy.R
 import com.egoriku.motionlayoutandroidacademy.common.BundleDelegate
 import com.egoriku.motionlayoutandroidacademy.common.LAYOUT_ID
-import kotlinx.android.synthetic.main.scene_8_final.*
+import kotlinx.android.synthetic.main.scene_9_final.*
 
 class MotionActivity : AppCompatActivity() {
 
@@ -20,7 +20,7 @@ class MotionActivity : AppCompatActivity() {
 
         setContentView(layoutId)
 
-        if (layoutId == R.layout.scene_8_final) {
+        if (layoutId == R.layout.scene_9_final) {
             motionLayout.setTransitionListener(object : TransitionAdapter() {
 
                 override fun onTransitionChange(
