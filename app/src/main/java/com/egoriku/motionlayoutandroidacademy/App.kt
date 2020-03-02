@@ -29,7 +29,7 @@ class App : Application() {
                 onItemSelected = {
                     Beagle.currentActivity?.run {
                         findViewById<MotionLayout>(R.id.motionLayout)?.setDebugMode(it.value)
-                        findViewById<MotionLayout>(R.id.motion_layout)?.setDebugMode(it.value)
+                        findViewById<MotionLayout>(R.id.motionLayout)?.setDebugMode(it.value)
 
                         Beagle.dismiss(this)
                     }
@@ -39,7 +39,7 @@ class App : Application() {
                 text = "Enable Coordinator",
                 onButtonPressed = {
                     Beagle.currentActivity?.run {
-                        findViewById<View>(R.id.appbar_layout).visible()
+                        findViewById<View>(R.id.appbarLayout).visible()
                     }
                 }
             )

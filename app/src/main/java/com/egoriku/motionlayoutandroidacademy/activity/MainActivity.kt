@@ -4,13 +4,17 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.annotation.LayoutRes
 import androidx.appcompat.app.AppCompatActivity
-import androidx.constraintlayout.motion.widget.MotionLayout
 import com.egoriku.motionlayoutandroidacademy.R
+import com.egoriku.motionlayoutandroidacademy.activity.todo.CoordinatorActivityTodo
+import com.egoriku.motionlayoutandroidacademy.activity.todo.MotionActivityTodo
 import com.egoriku.motionlayoutandroidacademy.common.LAYOUT_ID
 import com.google.android.material.appbar.AppBarLayout
-import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.layout_buttons.*
+import kotlinx.android.synthetic.main.step_10.*
 
-class MainActivity : AppCompatActivity(R.layout.activity_main) {
+class MainActivity : AppCompatActivity(R.layout.step_10) {
+
+    private var isAppBarExpanded = true
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -84,9 +88,11 @@ class MainActivity : AppCompatActivity(R.layout.activity_main) {
         }
 
         step_9_todo.setOnClickListener {
-            startActivity(Intent(this, MotionActivityTodo::class.java).apply {
-                putExtra(LAYOUT_ID, R.layout.step_9)
-            })
+            startActivity(Intent(this, MotionActivityTodo::class.java))
+        }
+
+        step_10_todo.setOnClickListener {
+            startActivity(Intent(this, CoordinatorActivityTodo::class.java))
         }
 
         initCoordinatorWithMotion()
@@ -99,15 +105,17 @@ class MainActivity : AppCompatActivity(R.layout.activity_main) {
     )
 
     private fun initCoordinatorWithMotion() {
-        val appBarLayout: AppBarLayout = findViewById(R.id.appbar_layout)
-        val motionLayout: MotionLayout = findViewById(R.id.motion_layout)
-
         val listener = AppBarLayout.OnOffsetChangedListener { _, verticalOffset ->
-            val scrollPosition = -verticalOffset / appBarLayout.totalScrollRange.toFloat()
+            val scrollPosition = -verticalOffset / appbarLayout.totalScrollRange.toFloat()
+            isAppBarExpanded = verticalOffset == 0
 
             motionLayout.progress = scrollPosition
         }
 
-        appBarLayout.addOnOffsetChangedListener(listener)
+        appbarLayout.addOnOffsetChangedListener(listener)
+
+        appLogo.setOnClickListener {
+            appbarLayout.setExpanded(!isAppBarExpanded)
+        }
     }
 }
