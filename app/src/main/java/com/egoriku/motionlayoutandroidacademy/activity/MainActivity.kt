@@ -19,36 +19,64 @@ class MainActivity : AppCompatActivity(R.layout.activity_main) {
             startMotionActivity(R.layout.scene_1_final)
         }
 
+        scene_1_todo.setOnClickListener {
+
+        }
+
         scene_2.setOnClickListener {
             startMotionActivity(R.layout.scene_2_final)
+        }
+
+        scene_2_todo.setOnClickListener {
+
         }
 
         scene_3.setOnClickListener {
             startMotionActivity(R.layout.scene_3_final)
         }
 
+        scene_3_todo.setOnClickListener {
+
+        }
+
         scene_4.setOnClickListener {
             startMotionActivity(R.layout.scene_4_final)
+        }
+
+        scene_4_todo.setOnClickListener {
+
         }
 
         scene_5.setOnClickListener {
             startMotionActivity(R.layout.scene_5_final)
         }
 
+        scene_5_todo.setOnClickListener {
+
+        }
+
         scene_6.setOnClickListener {
             startMotionActivity(R.layout.scene_6_final)
+        }
+
+        scene_6_todo.setOnClickListener {
+
         }
 
         scene_7.setOnClickListener {
             startMotionActivity(R.layout.scene_7_final)
         }
 
+        scene_7_todo.setOnClickListener {
+
+        }
+
         scene_8.setOnClickListener {
             startMotionActivity(R.layout.scene_8_final)
         }
 
-        scene_9.setOnClickListener {
-            startMotionActivity(R.layout.motion_in_progress)
+        scene_8_todo.setOnClickListener {
+
         }
 
         initCoordinatorWithMotion()
