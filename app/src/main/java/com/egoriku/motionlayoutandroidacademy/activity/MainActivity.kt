@@ -80,11 +80,13 @@ class MainActivity : AppCompatActivity(R.layout.activity_main) {
         }
 
         step_9.setOnClickListener {
-            startMotionActivity(R.layout.scene_9_final)
+            startMotionActivity(R.layout.step_9)
         }
 
         step_9_todo.setOnClickListener {
-
+            startActivity(Intent(this, MotionActivityTodo::class.java).apply {
+                putExtra(LAYOUT_ID, R.layout.step_9)
+            })
         }
 
         initCoordinatorWithMotion()

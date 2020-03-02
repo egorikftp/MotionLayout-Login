@@ -2,14 +2,11 @@ package com.egoriku.motionlayoutandroidacademy.activity
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import androidx.constraintlayout.motion.widget.MotionLayout
-import androidx.constraintlayout.motion.widget.TransitionAdapter
 import com.egoriku.motionlayoutandroidacademy.R
 import com.egoriku.motionlayoutandroidacademy.common.BundleDelegate
 import com.egoriku.motionlayoutandroidacademy.common.LAYOUT_ID
-import kotlinx.android.synthetic.main.step_9.*
 
-class MotionActivity : AppCompatActivity() {
+class MotionActivityTodo : AppCompatActivity() {
 
     private val Bundle.layoutId: Int by BundleDelegate.Int(LAYOUT_ID)
 
@@ -21,17 +18,7 @@ class MotionActivity : AppCompatActivity() {
         setContentView(layoutId)
 
         if (layoutId == R.layout.step_9) {
-            motionLayout.setTransitionListener(object : TransitionAdapter() {
-
-                override fun onTransitionChange(
-                    layout: MotionLayout?,
-                    startId: Int,
-                    endId: Int,
-                    progress: Float
-                ) {
-                    logo.isSelected = progress > 0.5
-                }
-            })
+            //TODO add TransitionAdapter and change selected state on 50% of animation
         }
     }
 }

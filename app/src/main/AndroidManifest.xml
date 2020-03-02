@@ -22,6 +22,9 @@
         <activity
             android:name=".activity.MotionActivity"
             android:theme="@style/MotionActivityTheme" />
+        <activity
+            android:name=".activity.MotionActivityTodo"
+            android:theme="@style/MotionActivityTheme" />
     </application>
 
 </manifest>
