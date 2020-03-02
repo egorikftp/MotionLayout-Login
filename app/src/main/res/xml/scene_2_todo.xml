@@ -33,19 +33,7 @@
             <Transform android:rotation="0" />
         </Constraint>
 
-        <Constraint
-            android:id="@id/sign_up_text"
-            android:layout_width="250dp"
-            android:layout_height="50dp">
-
-            <Layout
-                motion:layout_constraintBottom_toBottomOf="parent"
-                motion:layout_constraintEnd_toEndOf="parent"
-                motion:layout_constraintStart_toStartOf="@id/sign_up_root"
-                motion:layout_constraintTop_toTopOf="parent" />
-
-            <Transform android:rotation="-90" />
-        </Constraint>
+        <!-- TODO add start Contraint for *sign_up_text* -->
 
         <Constraint
             android:id="@id/login_root"
@@ -78,7 +66,7 @@
 
         <Constraint
             android:id="@id/login_text"
-            android:layout_width="50dp"
+            android:layout_width="150dp"
             android:layout_height="250dp">
 
             <Layout
@@ -90,20 +78,7 @@
             <Transform android:rotation="-90" />
         </Constraint>
 
-        <Constraint
-            android:id="@id/sign_up_text"
-            android:layout_width="250dp"
-            android:layout_height="50dp">
-
-            <Layout
-                motion:layout_constraintBottom_toBottomOf="parent"
-                motion:layout_constraintEnd_toEndOf="@+id/sign_up_root"
-                motion:layout_constraintStart_toStartOf="@+id/sign_up_root"
-                motion:layout_constraintTop_toTopOf="@+id/sign_up_root"
-                motion:layout_constraintVertical_bias="0.8" />
-
-            <Transform android:rotation="0" />
-        </Constraint>
+        <!-- TODO add end Contraint for *sign_up_text* -->
 
         <Constraint
             android:id="@id/login_root"

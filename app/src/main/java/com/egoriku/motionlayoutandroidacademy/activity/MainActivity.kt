@@ -28,7 +28,7 @@ class MainActivity : AppCompatActivity(R.layout.activity_main) {
         }
 
         scene_2_todo.setOnClickListener {
-
+            startMotionActivity(R.layout.scene_2_todo)
         }
 
         scene_3.setOnClickListener {
