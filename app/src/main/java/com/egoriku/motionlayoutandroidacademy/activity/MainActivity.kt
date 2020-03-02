@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity(R.layout.activity_main) {
         }
 
         scene_1_todo.setOnClickListener {
-
+            startMotionActivity(R.layout.scene_1_todo)
         }
 
         scene_2.setOnClickListener {
