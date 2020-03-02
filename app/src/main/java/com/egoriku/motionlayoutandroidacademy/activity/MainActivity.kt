@@ -64,11 +64,11 @@ class MainActivity : AppCompatActivity(R.layout.activity_main) {
         }
 
         step_7.setOnClickListener {
-            startMotionActivity(R.layout.scene_7_final)
+            startMotionActivity(R.layout.step_7)
         }
 
         step_7_todo.setOnClickListener {
-
+            startMotionActivity(R.layout.step_7_todo)
         }
 
         step_8.setOnClickListener {
