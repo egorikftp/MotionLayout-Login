@@ -30,7 +30,7 @@
                 motion:layout_constraintTop_toTopOf="@+id/login_root"
                 motion:layout_constraintVertical_bias="0.8" />
 
-             <Transform android:rotation="0" />
+            <Transform android:rotation="0" />
 
             <CustomAttribute
                 motion:attributeName="textSize"
@@ -50,9 +50,7 @@
 
             <Transform android:rotation="-90" />
 
-            <CustomAttribute
-                motion:attributeName="textSize"
-                motion:customFloatValue="16" />
+            <!-- TODO add CustomAttribute -->
         </Constraint>
 
         <Constraint
@@ -116,9 +114,7 @@
 
             <Transform android:rotation="0" />
 
-            <CustomAttribute
-                motion:attributeName="textSize"
-                motion:customFloatValue="36" />
+            <!-- TODO add CustomAttribute and Transform -->
         </Constraint>
 
         <Constraint
