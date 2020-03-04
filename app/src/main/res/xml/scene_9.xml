@@ -189,8 +189,8 @@
 
         <Constraint
             android:id="@id/sign_up_text"
-            android:layout_width="250dp"
-            android:layout_height="50dp">
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
 
             <Layout
                 motion:layout_constraintBottom_toBottomOf="parent"
@@ -328,8 +328,8 @@
 
         <Constraint
             android:id="@id/login_text"
-            android:layout_width="150dp"
-            android:layout_height="250dp">
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
 
             <Layout
                 motion:layout_constraintBottom_toBottomOf="parent"

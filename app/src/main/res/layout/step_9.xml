@@ -131,6 +131,7 @@
         android:id="@+id/login_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:ellipsize="none"
         android:gravity="center"
         android:singleLine="true"
         android:text="LOG IN"
@@ -140,9 +141,10 @@
         android:id="@+id/sign_up_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:ellipsize="none"
         android:gravity="center"
         android:singleLine="true"
         android:text="SIGN UP"
-        android:textColor="#fff" />
+        android:textColor="@color/White" />
 
 </androidx.constraintlayout.motion.widget.MotionLayout>
