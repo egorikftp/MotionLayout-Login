@@ -19,12 +19,15 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
-            <com.google.android.material.button.MaterialButton
+            <Button
                 android:id="@+id/step_1"
                 style="@style/ButtonStyleFinal"
-                android:text="Step 1 \n(Initial)" />
+                android:elevation="0dp"
+                android:stateListAnimator="@null"
+                android:text="Step 1 \n(Initial)"
+                app:rippleColor="@null" />
 
-            <com.google.android.material.button.MaterialButton
+            <Button
                 android:id="@+id/step_1_todo"
                 style="@style/ButtonStyleTodo"
                 android:text="Step 1 (TODO)" />
@@ -35,12 +38,12 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
-            <com.google.android.material.button.MaterialButton
+            <Button
                 android:id="@+id/step_2"
                 style="@style/ButtonStyleFinal"
                 android:text="Step 2 \n(Text Rotation)" />
 
-            <com.google.android.material.button.MaterialButton
+            <Button
                 android:id="@+id/step_2_todo"
                 style="@style/ButtonStyleTodo"
                 android:text="Step 2 (TODO)" />
@@ -51,12 +54,12 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
-            <com.google.android.material.button.MaterialButton
+            <Button
                 android:id="@+id/step_3"
                 style="@style/ButtonStyleFinal"
                 android:text="Step 3 \n(Text Size)" />
 
-            <com.google.android.material.button.MaterialButton
+            <Button
                 android:id="@+id/step_3_todo"
                 style="@style/ButtonStyleTodo"
                 android:text="Step 3 (TODO)" />
@@ -67,12 +70,12 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
-            <com.google.android.material.button.MaterialButton
+            <Button
                 android:id="@+id/step_4"
                 style="@style/ButtonStyleFinal"
                 android:text="Step 4 \n(Swipes)" />
 
-            <com.google.android.material.button.MaterialButton
+            <Button
                 android:id="@+id/step_4_todo"
                 style="@style/ButtonStyleTodo"
                 android:text="Step 4 (TODO)" />
@@ -83,12 +86,12 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
-            <com.google.android.material.button.MaterialButton
+            <Button
                 android:id="@+id/step_5"
                 style="@style/ButtonStyleFinal"
                 android:text="Step 5 (ImageFilterView)" />
 
-            <com.google.android.material.button.MaterialButton
+            <Button
                 android:id="@+id/step_5_todo"
                 style="@style/ButtonStyleTodo"
                 android:text="Step 5 (TODO)" />
@@ -99,12 +102,12 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
-            <com.google.android.material.button.MaterialButton
+            <Button
                 android:id="@+id/step_6"
                 style="@style/ButtonStyleFinal"
                 android:text="Step 6 \n(Input for Login)" />
 
-            <com.google.android.material.button.MaterialButton
+            <Button
                 android:id="@+id/step_6_todo"
                 style="@style/ButtonStyleTodo"
                 android:text="Step 6 (TODO)" />
@@ -115,12 +118,12 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
-            <com.google.android.material.button.MaterialButton
+            <Button
                 android:id="@+id/step_7"
                 style="@style/ButtonStyleFinal"
                 android:text="Step 7 \n(KeyFrameSet)" />
 
-            <com.google.android.material.button.MaterialButton
+            <Button
                 android:id="@+id/step_7_todo"
                 style="@style/ButtonStyleTodo"
                 android:text="Step 7 (TODO)" />
@@ -131,12 +134,12 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
-            <com.google.android.material.button.MaterialButton
+            <Button
                 android:id="@+id/step_8"
                 style="@style/ButtonStyleFinal"
                 android:text="Step 8 \n(Input for Sign In)" />
 
-            <com.google.android.material.button.MaterialButton
+            <Button
                 android:id="@+id/step_8_todo"
                 style="@style/ButtonStyleTodo"
                 android:text="Step 8 (TODO)" />
@@ -147,21 +150,22 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
-            <com.google.android.material.button.MaterialButton
+            <Button
                 android:id="@+id/step_9"
                 style="@style/ButtonStyleFinal"
                 android:text="Step 9\n(TransitionAdapter)" />
 
-            <com.google.android.material.button.MaterialButton
+            <Button
                 android:id="@+id/step_9_todo"
                 style="@style/ButtonStyleTodo"
                 android:text="Step 9 (TODO)" />
         </LinearLayout>
 
-        <com.google.android.material.button.MaterialButton
+        <Button
             android:id="@+id/step_10_todo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Step 10 Coordinator Layout (TODO)" />
+            android:text="Step 10 Coordinator Layout (TODO)"
+            android:textAllCaps="false" />
     </LinearLayout>
 </androidx.core.widget.NestedScrollView>
