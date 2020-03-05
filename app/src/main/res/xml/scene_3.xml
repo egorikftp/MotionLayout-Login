@@ -28,7 +28,7 @@
                 motion:layout_constraintEnd_toEndOf="@+id/login_root"
                 motion:layout_constraintStart_toStartOf="parent"
                 motion:layout_constraintTop_toTopOf="@+id/login_root"
-                motion:layout_constraintVertical_bias="0.8" />
+                motion:layout_constraintVertical_bias="0.9" />
 
             <Transform android:rotation="0" />
 
@@ -112,7 +112,7 @@
                 motion:layout_constraintEnd_toEndOf="@+id/sign_up_root"
                 motion:layout_constraintStart_toStartOf="@+id/sign_up_root"
                 motion:layout_constraintTop_toTopOf="@+id/sign_up_root"
-                motion:layout_constraintVertical_bias="0.8" />
+                motion:layout_constraintVertical_bias="0.9" />
 
             <Transform android:rotation="0" />
 

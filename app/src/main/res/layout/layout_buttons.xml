@@ -137,7 +137,7 @@
             <Button
                 android:id="@+id/step_8"
                 style="@style/ButtonStyleFinal"
-                android:text="Step 8 \n(Input for Sign In)" />
+                android:text="Step 8 \n(Input for Sign Up)" />
 
             <Button
                 android:id="@+id/step_8_todo"
