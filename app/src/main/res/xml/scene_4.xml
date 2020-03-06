@@ -9,6 +9,7 @@
 
         <OnSwipe
             motion:dragDirection="dragLeft"
+            motion:maxAcceleration="100"
             motion:onTouchUp="autoComplete"
             motion:touchAnchorId="@id/sign_up_root"
             motion:touchAnchorSide="left" />
