@@ -330,7 +330,7 @@
                 motion:layout_constraintBottom_toBottomOf="parent"
                 motion:layout_constraintEnd_toEndOf="@+id/sign_up_root"
                 motion:layout_constraintStart_toStartOf="@+id/sign_up_root"
-                motion:layout_constraintTop_toBottomOf="@id/sign_up_confirm_password"
+                motion:layout_constraintTop_toBottomOf="@id/sign_up_password"
                 motion:layout_constraintVertical_bias="0.6" />
 
             <Transform android:rotation="0" />

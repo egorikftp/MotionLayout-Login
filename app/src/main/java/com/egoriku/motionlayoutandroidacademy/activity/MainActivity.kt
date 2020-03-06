@@ -9,7 +9,6 @@ import com.egoriku.motionlayoutandroidacademy.activity.todo.CoordinatorActivityT
 import com.egoriku.motionlayoutandroidacademy.activity.todo.MotionActivityTodo
 import com.egoriku.motionlayoutandroidacademy.common.LAYOUT_ID
 import com.google.android.material.appbar.AppBarLayout
-import kotlinx.android.synthetic.main.layout_buttons.*
 import kotlinx.android.synthetic.main.step_10.*
 
 class MainActivity : AppCompatActivity(R.layout.step_10) {
