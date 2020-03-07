@@ -1,8 +1,13 @@
+@file:Suppress("unused")
+
 package com.egoriku.motionlayoutandroidacademy
 
 import android.app.Application
+import android.content.Intent
 import android.view.View
 import androidx.constraintlayout.motion.widget.MotionLayout
+import com.egoriku.motionlayoutandroidacademy.activity.MotionActivity
+import com.egoriku.motionlayoutandroidacademy.common.LAYOUT_ID
 import com.egoriku.motionlayoutandroidacademy.common.visible
 import com.pandulapeter.beagle.Beagle
 import com.pandulapeter.beagleCore.configuration.Trick
@@ -17,6 +22,14 @@ class App : Application() {
 
         Beagle.learn(
             Trick.Header(title = getString(R.string.app_name)),
+            Trick.Button(
+                text = "Enable Coordinator",
+                onButtonPressed = {
+                    Beagle.currentActivity?.run {
+                        findViewById<View>(R.id.appbarLayout)?.visible()
+                    }
+                }
+            ),
             Trick.SimpleList(
                 title = "Debug mode",
                 isInitiallyExpanded = true,
@@ -29,17 +42,28 @@ class App : Application() {
                 onItemSelected = {
                     Beagle.currentActivity?.run {
                         findViewById<MotionLayout>(R.id.motionLayout)?.setDebugMode(it.value)
-                        findViewById<MotionLayout>(R.id.motionLayout)?.setDebugMode(it.value)
 
-                        Beagle.dismiss(this)
+                        Beagle.dismiss()
                     }
                 }
             ),
-            Trick.Button(
-                text = "Enable Coordinator",
-                onButtonPressed = {
+            Trick.SimpleList(
+                title = "Basic animations",
+                isInitiallyExpanded = true,
+                items = listOf(
+                    DebugOptions(name = "Clicks", value = R.layout.activity_basic_clicks),
+                    DebugOptions(name = "Swipes", value = R.layout.activity_basic_swipes),
+                    DebugOptions(name = "Transform", value = R.layout.activity_basic_transform),
+                    DebugOptions(
+                        name = "Key attributes",
+                        value = R.layout.activity_basic_key_attributes
+                    )
+                ),
+                onItemSelected = {
                     Beagle.currentActivity?.run {
-                        findViewById<View>(R.id.appbarLayout).visible()
+                        startActivity(Intent(this, MotionActivity::class.java).apply {
+                            putExtra(LAYOUT_ID, it.value)
+                        })
                     }
                 }
             )

@@ -2,6 +2,7 @@ package com.egoriku.motionlayoutandroidacademy.activity
 
 import android.content.Intent
 import android.os.Bundle
+import android.os.Handler
 import androidx.annotation.LayoutRes
 import androidx.appcompat.app.AppCompatActivity
 import com.egoriku.motionlayoutandroidacademy.R
@@ -9,9 +10,10 @@ import com.egoriku.motionlayoutandroidacademy.activity.todo.CoordinatorActivityT
 import com.egoriku.motionlayoutandroidacademy.activity.todo.MotionActivityTodo
 import com.egoriku.motionlayoutandroidacademy.common.LAYOUT_ID
 import com.google.android.material.appbar.AppBarLayout
-import kotlinx.android.synthetic.main.step_10.*
+import com.pandulapeter.beagle.Beagle
+import kotlinx.android.synthetic.main.activity_main.*
 
-class MainActivity : AppCompatActivity(R.layout.step_10) {
+class MainActivity : AppCompatActivity(R.layout.activity_main) {
 
     private var isAppBarExpanded = true
 

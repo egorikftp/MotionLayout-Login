@@ -50,6 +50,15 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
+            <Button
+                android:id="@+id/motionBasic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="MotionLayout Basic"
+                android:textAllCaps="false"
+                android:visibility="gone"
+                tools:visibility="visible" />
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

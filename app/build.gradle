@@ -33,5 +33,5 @@ dependencies {
     implementation 'androidx.constraintlayout:constraintlayout:2.0.0-beta4'
     implementation 'com.google.android.material:material:1.1.0'
 
-    debugImplementation "com.github.pandulapeter.beagle:beagle:1.5.1"
+    debugImplementation "com.github.pandulapeter.beagle:beagle:1.7.0"
 }
