@@ -11,9 +11,6 @@
             motion:clickAction="toggle"
             motion:targetId="@id/login_text" />
 
-        <OnClick
-            motion:clickAction="toggle"
-            motion:targetId="@id/sign_up_text" />
     </Transition>
 
     <ConstraintSet android:id="@+id/start">

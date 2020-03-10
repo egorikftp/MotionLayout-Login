@@ -29,4 +29,12 @@
         <item name="android:layout_height">match_parent</item>
         <item name="android:textAllCaps">false</item>
     </style>
+
+    <style name="TextInputLayoutStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="android:layout_width">200dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColorHint">@color/White</item>
+        <item name="boxStrokeColor">@color/selector_text_input_layout_border</item>
+        <item name="hintTextColor">@color/White</item>
+    </style>
 </resources>

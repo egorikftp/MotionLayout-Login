@@ -69,7 +69,7 @@
                 motion:motionTarget="@+id/sign_up_password"
                 motion:percentX="0.5" />
 
-            <!--TODO add KeyAttribute-->
+            <!--TODO add KeyAttribute and KeyPosition-->
 
         </KeyFrameSet>
     </Transition>

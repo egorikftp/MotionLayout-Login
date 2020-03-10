@@ -25,7 +25,7 @@
                 motion:motionTarget="@+id/login_email"
                 motion:percentX="0.5" />
 
-            <!--TODO add KeyAttribute-->
+            <!--TODO add KeyAttribute and KeyPosition -->
 
             <KeyAttribute
                 android:alpha="0"

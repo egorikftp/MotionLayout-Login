@@ -16,14 +16,9 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/login_email"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
+        style="@style/TextInputLayoutStyle"
         android:layout_marginTop="70dp"
-        android:hint="Email"
-        android:textColorHint="@color/White"
-        app:boxStrokeColor="@color/selector_text_input_layout_border"
-        app:hintTextColor="@color/White">
+        android:hint="Email">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
