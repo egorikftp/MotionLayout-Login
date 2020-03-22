@@ -26,7 +26,7 @@
                 android:id="@+id/appLogo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:srcCompat="@drawable/ic_cat_vector" />
+                app:srcCompat="@drawable/ic_cat_with_glasses" />
 
             <TextView
                 android:id="@+id/appName"
@@ -195,7 +195,7 @@
                 <Button
                     android:id="@+id/step_9"
                     style="@style/ButtonStyleFinal"
-                    android:text="Step 9\n(TransitionAdapter)" />
+                    android:text="Step 9\n(TransitionListener)" />
 
                 <Button
                     android:id="@+id/step_9_todo"

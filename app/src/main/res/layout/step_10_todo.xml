@@ -24,7 +24,7 @@
                 android:id="@+id/appLogo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:srcCompat="@drawable/ic_cat_vector" />
+                app:srcCompat="@drawable/ic_cat_with_glasses" />
 
             <TextView
                 android:id="@+id/appName"
@@ -39,9 +39,9 @@
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:alpha="0.5"
         android:fillViewport="true"
         android:padding="16dp"
-        android:alpha="0.5"
         app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
         <LinearLayout

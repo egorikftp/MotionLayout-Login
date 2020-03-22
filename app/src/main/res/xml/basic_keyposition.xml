@@ -9,6 +9,14 @@
         <OnSwipe
             motion:dragDirection="dragDown"
             motion:touchAnchorId="@id/catImage" />
+
+        <KeyFrameSet>
+            <KeyPosition
+                motion:framePosition="50"
+                motion:keyPositionType="pathRelative"
+                motion:motionTarget="@id/catImage"
+                motion:percentY="0.25" />
+        </KeyFrameSet>
     </Transition>
 
     <ConstraintSet android:id="@+id/start">
@@ -45,8 +53,6 @@
                 motion:layout_constraintBottom_toBottomOf="parent"
                 motion:layout_constraintLeft_toLeftOf="parent"
                 motion:layout_constraintRight_toRightOf="parent" />
-
-            <Transform android:rotation="360" />
         </Constraint>
 
         <Constraint android:id="@+id/catText">

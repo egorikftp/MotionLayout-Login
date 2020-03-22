@@ -3,16 +3,16 @@
     xmlns:motion="http://schemas.android.com/apk/res-auto">
 
     <Transition
-        motion:constraintSetEnd="@id/end"
-        motion:constraintSetStart="@id/start"
-        motion:duration="700">
+        motion:constraintSetEnd="@id/click_end"
+        motion:constraintSetStart="@id/click_start"
+        motion:duration="300">
 
         <OnClick
             motion:clickAction="toggle"
             motion:targetId="@id/catImage" />
     </Transition>
 
-    <ConstraintSet android:id="@+id/start">
+    <ConstraintSet android:id="@+id/click_start">
         <Constraint android:id="@+id/catImage">
             <Layout
                 android:layout_width="wrap_content"
@@ -20,10 +20,14 @@
                 motion:layout_constraintLeft_toLeftOf="parent"
                 motion:layout_constraintRight_toRightOf="parent"
                 motion:layout_constraintTop_toTopOf="parent" />
+
+            <CustomAttribute
+                motion:attributeName="crossfade"
+                motion:customFloatValue="1" />
         </Constraint>
     </ConstraintSet>
 
-    <ConstraintSet android:id="@+id/end">
+    <ConstraintSet android:id="@+id/click_end">
         <Constraint android:id="@+id/catImage">
             <Layout
                 android:layout_width="wrap_content"
@@ -32,7 +36,9 @@
                 motion:layout_constraintLeft_toLeftOf="parent"
                 motion:layout_constraintRight_toRightOf="parent" />
 
-            <Transform android:rotation="360" />
+            <CustomAttribute
+                motion:attributeName="crossfade"
+                motion:customFloatValue="0" />
         </Constraint>
     </ConstraintSet>
 </MotionScene>

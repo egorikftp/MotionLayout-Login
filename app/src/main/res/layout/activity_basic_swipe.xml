@@ -1,14 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/motionLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    app:layoutDescription="@xml/basic_transform">
+    app:layoutDescription="@xml/basic_swipe"
+    tools:ignore="HardcodedText">
 
     <ImageView
         android:id="@+id/catImage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/ic_cat_with_glasses" />
+
+    <TextView
+        android:id="@+id/catText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="none"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="I'm Cat"
+        android:textColor="@color/Black"
+        android:textStyle="bold" />
 </androidx.constraintlayout.motion.widget.MotionLayout>

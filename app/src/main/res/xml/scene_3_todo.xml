@@ -111,7 +111,7 @@
 
             <Transform android:rotation="0" />
 
-            <!-- TODO add CustomAttribute and Transform -->
+            <!-- TODO add CustomAttribute -->
         </Constraint>
 
         <Constraint

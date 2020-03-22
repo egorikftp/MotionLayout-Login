@@ -4,11 +4,12 @@
     android:id="@+id/motionLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    app:layoutDescription="@xml/basic_transform">
+    app:layoutDescription="@xml/basic_imagefilter">
 
-    <ImageView
+    <androidx.constraintlayout.utils.widget.ImageFilterView
         android:id="@+id/catImage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/ic_cat_with_glasses" />
+        app:altSrc="@drawable/ic_cat_with_glasses"
+        app:srcCompat="@drawable/ic_cat_without_glasses" />
 </androidx.constraintlayout.motion.widget.MotionLayout>

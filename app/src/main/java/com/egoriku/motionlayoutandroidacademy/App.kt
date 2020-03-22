@@ -51,13 +51,15 @@ class App : Application() {
                 title = "Basic animations",
                 isInitiallyExpanded = true,
                 items = listOf(
-                    DebugOptions(name = "Clicks", value = R.layout.activity_basic_clicks),
-                    DebugOptions(name = "Swipes", value = R.layout.activity_basic_swipes),
+                    DebugOptions(name = "Click", value = R.layout.activity_basic_click),
                     DebugOptions(name = "Transform", value = R.layout.activity_basic_transform),
-                    DebugOptions(
-                        name = "Key attributes",
-                        value = R.layout.activity_basic_key_attributes
-                    )
+                    DebugOptions(name = "Custom Attribute", value = R.layout.activity_basic_custom_attribute),
+                    DebugOptions(name = "Swipe", value = R.layout.activity_basic_swipe),
+                    DebugOptions(name = "ImageFilterView", value = R.layout.activity_basic_imagefilter),
+                    DebugOptions(name = "ImageFilterView Saturation", value = R.layout.activity_basic_imagefilter_saturation),
+                    DebugOptions(name = "PropertySet", value = R.layout.activity_basic_property_set),
+                    DebugOptions(name = "KeyPosition", value = R.layout.activity_basic_keyposition),
+                    DebugOptions(name = "KeyAttribute", value = R.layout.activity_basic_keyattribute)
                 ),
                 onItemSelected = {
                     Beagle.currentActivity?.run {

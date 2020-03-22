@@ -9,28 +9,25 @@
 
         <OnClick
             motion:clickAction="toggle"
-            motion:targetId="@id/cat" />
+            motion:targetId="@id/catImage" />
     </Transition>
 
     <ConstraintSet android:id="@+id/click_start">
-        <Constraint android:id="@+id/cat">
+        <Constraint android:id="@+id/catImage">
             <Layout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
                 motion:layout_constraintLeft_toLeftOf="parent"
                 motion:layout_constraintRight_toRightOf="parent"
                 motion:layout_constraintTop_toTopOf="parent" />
         </Constraint>
-
     </ConstraintSet>
 
     <ConstraintSet android:id="@+id/click_end">
-        <Constraint android:id="@+id/cat">
+        <Constraint android:id="@+id/catImage">
             <Layout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="16dp"
                 motion:layout_constraintBottom_toBottomOf="parent"
                 motion:layout_constraintLeft_toLeftOf="parent"
                 motion:layout_constraintRight_toRightOf="parent" />

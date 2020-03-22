@@ -9,7 +9,7 @@
 
         <OnClick
             motion:clickAction="toggle"
-            motion:targetId="@id/catImage" />
+            motion:targetId="@id/catText" />
     </Transition>
 
     <ConstraintSet android:id="@+id/start">
@@ -20,6 +20,20 @@
                 motion:layout_constraintLeft_toLeftOf="parent"
                 motion:layout_constraintRight_toRightOf="parent"
                 motion:layout_constraintTop_toTopOf="parent" />
+        </Constraint>
+
+        <Constraint android:id="@+id/catText">
+            <Layout
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                motion:layout_constraintBottom_toBottomOf="parent"
+                motion:layout_constraintLeft_toLeftOf="parent"
+                motion:layout_constraintRight_toRightOf="parent"
+                motion:layout_constraintTop_toTopOf="parent" />
+
+            <CustomAttribute
+                motion:attributeName="textSize"
+                motion:customFloatValue="20" />
         </Constraint>
     </ConstraintSet>
 
@@ -33,6 +47,24 @@
                 motion:layout_constraintRight_toRightOf="parent" />
 
             <Transform android:rotation="360" />
+
+            <PropertySet
+                android:alpha="0"
+                android:visibility="invisible" />
+        </Constraint>
+
+        <Constraint android:id="@+id/catText">
+            <Layout
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                motion:layout_constraintBottom_toBottomOf="parent"
+                motion:layout_constraintLeft_toLeftOf="parent"
+                motion:layout_constraintRight_toRightOf="parent"
+                motion:layout_constraintTop_toTopOf="parent" />
+
+            <CustomAttribute
+                motion:attributeName="textSize"
+                motion:customFloatValue="32" />
         </Constraint>
     </ConstraintSet>
 </MotionScene>

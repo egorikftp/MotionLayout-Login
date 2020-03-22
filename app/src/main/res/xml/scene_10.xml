@@ -74,6 +74,7 @@
                 motion:layout_constraintLeft_toLeftOf="@id/appLogo"
                 motion:layout_constraintRight_toRightOf="parent"
                 motion:layout_constraintTop_toTopOf="@id/appLogo" />
+
             <PropertySet android:alpha="1" />
         </Constraint>
     </ConstraintSet>

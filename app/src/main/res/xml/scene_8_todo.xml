@@ -126,7 +126,6 @@
         </Constraint>
 
         <Constraint android:id="@+id/forgot_password">
-
             <Layout
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
