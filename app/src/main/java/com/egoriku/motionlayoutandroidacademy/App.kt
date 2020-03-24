@@ -59,7 +59,11 @@ class App : Application() {
                     DebugOptions(name = "ImageFilterView Saturation", value = R.layout.activity_basic_imagefilter_saturation),
                     DebugOptions(name = "PropertySet", value = R.layout.activity_basic_property_set),
                     DebugOptions(name = "KeyPosition", value = R.layout.activity_basic_keyposition),
-                    DebugOptions(name = "KeyAttribute", value = R.layout.activity_basic_keyattribute)
+                    DebugOptions(name = "KeyAttribute", value = R.layout.activity_basic_keyattribute),
+                    DebugOptions(name = "Motion", value = R.layout.activity_basic_motion),
+                    DebugOptions(name = "KeyCycle", value = R.layout.activity_basic_key_cycle),
+                    DebugOptions(name = "KeyTimeCycle", value = R.layout.activity_basic_key_time_cycle),
+                    DebugOptions(name = "KeyTrigger", value = R.layout.activity_basic_key_trigger)
                 ),
                 onItemSelected = {
                     Beagle.currentActivity?.run {

@@ -23,6 +23,10 @@ class CoordinatorActivityTodo : AppCompatActivity(R.layout.step_10_todo) {
 
         appbarLayout.addOnOffsetChangedListener(listener)
 
-        //TODO handle clicks on Logo
+        /**
+         * TODO handle clicks on Logo.
+         *
+         *  @see com.google.android.material.appbar.AppBarLayout.setExpanded
+         */
     }
 }

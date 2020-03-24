@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        motion:constraintSetEnd="@id/click_end"
+        motion:constraintSetStart="@id/click_start"
+        motion:duration="2600">
+
+        <OnSwipe
+            motion:dragDirection="dragDown"
+            motion:touchAnchorId="@id/catImage" />
+
+        <KeyFrameSet>
+            <KeyTrigger
+                motion:framePosition="90"
+                motion:motionTarget="@id/catImage"
+                motion:onNegativeCross="show" />
+
+            <KeyTrigger
+                motion:framePosition="80"
+                motion:motionTarget="@id/catImage"
+                motion:onPositiveCross="hide" />
+        </KeyFrameSet>
+    </Transition>
+
+    <ConstraintSet android:id="@+id/click_start">
+        <Constraint android:id="@+id/catImage">
+            <Layout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                motion:layout_constraintBottom_toBottomOf="parent"
+                motion:layout_constraintLeft_toLeftOf="parent"
+                motion:layout_constraintRight_toRightOf="parent"
+                motion:layout_constraintTop_toTopOf="parent" />
+
+            <Motion motion:pathMotionArc="startVertical" />
+        </Constraint>
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/click_end">
+        <Constraint android:id="@+id/catImage">
+            <Layout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                motion:layout_constraintBottom_toBottomOf="parent"
+                motion:layout_constraintLeft_toLeftOf="parent"
+                motion:layout_constraintRight_toRightOf="parent" />
+        </Constraint>
+    </ConstraintSet>
+</MotionScene>
