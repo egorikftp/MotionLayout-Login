@@ -6,22 +6,22 @@ import android.view.animation.ScaleAnimation
 import androidx.appcompat.widget.AppCompatImageView
 import androidx.interpolator.view.animation.FastOutLinearInInterpolator
 
-class CustomImageView @JvmOverloads constructor(
+class DisappearingImageView @JvmOverloads constructor(
     context: Context,
     attrs: AttributeSet? = null,
     defStyleAttr: Int = 0
 ) : AppCompatImageView(context, attrs, defStyleAttr) {
 
-    fun hide() = animateView(isExpand = false)
+    fun hide() = animateView(isAppear = false)
 
-    fun show() = animateView(isExpand = true)
+    fun show() = animateView(isAppear = true)
 
-    private fun animateView(isExpand: Boolean) {
+    private fun animateView(isAppear: Boolean) {
         if (animation?.hasEnded() == false) {
             return
         }
 
-        if (isExpand) {
+        if (isAppear) {
             ScaleAnimation(
                 0.0f, 1.0f, 0.0f, 1.0f,
                 ScaleAnimation.RELATIVE_TO_SELF, 0.5f,

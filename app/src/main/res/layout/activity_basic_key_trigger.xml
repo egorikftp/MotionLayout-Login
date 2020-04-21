@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     app:layoutDescription="@xml/basic_key_trigger">
 
-    <com.egoriku.motionlayoutandroidacademy.common.CustomImageView
+    <com.egoriku.motionlayoutandroidacademy.common.DisappearingImageView
         android:id="@+id/catImage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

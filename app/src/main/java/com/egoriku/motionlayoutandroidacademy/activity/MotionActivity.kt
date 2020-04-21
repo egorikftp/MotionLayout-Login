@@ -14,7 +14,7 @@ class MotionActivity : AppCompatActivity() {
 
     private val Bundle.layoutId: Int by BundleDelegate.Int(LAYOUT_ID)
 
-    private var currentStateId: Int = R.id.start
+    private var completedId: Int = R.id.start
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -25,14 +25,14 @@ class MotionActivity : AppCompatActivity() {
 
         if (layoutId == R.layout.step_9) {
             login_text.setOnClickListener {
-                when (currentStateId) {
+                when (completedId) {
                     R.id.start -> toast("Perform Login")
                     else -> motionLayout.transitionToStart()
                 }
             }
 
             sign_up_text.setOnClickListener {
-                when (currentStateId) {
+                when (completedId) {
                     R.id.end -> toast("Perform Sign Up")
                     else -> motionLayout.transitionToEnd()
                 }
@@ -41,7 +41,7 @@ class MotionActivity : AppCompatActivity() {
             motionLayout.setTransitionListener(object : TransitionAdapter() {
 
                 override fun onTransitionCompleted(motionLayout: MotionLayout?, currentId: Int) {
-                    currentStateId = currentId
+                    completedId = currentId
                 }
             })
         }
