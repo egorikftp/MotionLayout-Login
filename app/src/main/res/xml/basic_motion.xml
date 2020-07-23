@@ -3,8 +3,8 @@
     xmlns:motion="http://schemas.android.com/apk/res-auto">
 
     <Transition
-        motion:constraintSetEnd="@id/click_end"
-        motion:constraintSetStart="@id/click_start"
+        motion:constraintSetEnd="@id/end"
+        motion:constraintSetStart="@id/start"
         motion:duration="1300">
 
         <OnClick
@@ -12,7 +12,7 @@
             motion:targetId="@id/catImage" />
     </Transition>
 
-    <ConstraintSet android:id="@+id/click_start">
+    <ConstraintSet android:id="@+id/start">
         <Constraint android:id="@+id/catImage">
             <Layout
                 android:layout_width="wrap_content"
@@ -26,7 +26,7 @@
         </Constraint>
     </ConstraintSet>
 
-    <ConstraintSet android:id="@+id/click_end">
+    <ConstraintSet android:id="@+id/end">
         <Constraint android:id="@+id/catImage">
             <Layout
                 android:layout_width="wrap_content"
