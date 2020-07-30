@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:motion="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <Transition
-        motion:constraintSetEnd="@id/end"
-        motion:constraintSetStart="@id/start"
-        motion:duration="1300">
+        app:constraintSetEnd="@id/end"
+        app:constraintSetStart="@id/start"
+        app:duration="1300">
 
         <OnClick
-            motion:clickAction="toggle"
-            motion:targetId="@id/catImage" />
+            app:clickAction="toggle"
+            app:targetId="@id/catImage" />
     </Transition>
 
     <ConstraintSet android:id="@+id/start">
@@ -17,12 +17,12 @@
             <Layout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                motion:layout_constraintLeft_toLeftOf="parent"
-                motion:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
             <Motion
-                motion:motionPathRotate="270"
-                motion:pathMotionArc="startVertical" />
+                app:motionPathRotate="270"
+                app:pathMotionArc="startVertical" />
         </Constraint>
     </ConstraintSet>
 
@@ -31,8 +31,8 @@
             <Layout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                motion:layout_constraintBottom_toBottomOf="parent"
-                motion:layout_constraintRight_toRightOf="parent" />
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toRightOf="parent" />
         </Constraint>
     </ConstraintSet>
 </MotionScene>

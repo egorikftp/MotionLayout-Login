@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:motion="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <Transition
-        motion:constraintSetEnd="@id/end"
-        motion:constraintSetStart="@id/start"
-        motion:duration="2600">
+        app:constraintSetEnd="@id/end"
+        app:constraintSetStart="@id/start"
+        app:duration="2600">
 
         <OnSwipe
-            motion:dragDirection="dragDown"
-            motion:touchAnchorId="@id/catImage" />
+            app:dragDirection="dragDown"
+            app:touchAnchorId="@id/catImage" />
 
         <KeyFrameSet>
             <KeyTrigger
-                motion:framePosition="80"
-                motion:motionTarget="@id/catImage"
-                motion:onPositiveCross="hide" />
+                app:framePosition="80"
+                app:motionTarget="@id/catImage"
+                app:onPositiveCross="hide" />
 
             <KeyTrigger
-                motion:framePosition="90"
-                motion:motionTarget="@id/catImage"
-                motion:onNegativeCross="show" />
+                app:framePosition="90"
+                app:motionTarget="@id/catImage"
+                app:onNegativeCross="show" />
         </KeyFrameSet>
     </Transition>
 
@@ -29,12 +29,12 @@
             <Layout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                motion:layout_constraintBottom_toBottomOf="parent"
-                motion:layout_constraintLeft_toLeftOf="parent"
-                motion:layout_constraintRight_toRightOf="parent"
-                motion:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
-            <Motion motion:pathMotionArc="startVertical" />
+            <Motion app:pathMotionArc="startVertical" />
         </Constraint>
     </ConstraintSet>
 
@@ -43,9 +43,9 @@
             <Layout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                motion:layout_constraintBottom_toBottomOf="parent"
-                motion:layout_constraintLeft_toLeftOf="parent"
-                motion:layout_constraintRight_toRightOf="parent" />
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent" />
         </Constraint>
     </ConstraintSet>
 </MotionScene>

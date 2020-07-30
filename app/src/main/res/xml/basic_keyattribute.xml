@@ -1,33 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:motion="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <Transition
-        motion:constraintSetEnd="@id/end"
-        motion:constraintSetStart="@id/start">
+        app:constraintSetEnd="@id/end"
+        app:constraintSetStart="@id/start">
 
         <OnSwipe
-            motion:dragDirection="dragDown"
-            motion:touchAnchorId="@id/catImage" />
+            app:dragDirection="dragDown"
+            app:touchAnchorId="@id/catImage" />
 
         <KeyFrameSet>
             <KeyPosition
-                motion:framePosition="50"
-                motion:keyPositionType="pathRelative"
-                motion:motionTarget="@id/catImage"
-                motion:percentY="0.25" />
+                app:framePosition="50"
+                app:keyPositionType="pathRelative"
+                app:motionTarget="@id/catImage"
+                app:percentY="0.25" />
 
             <KeyAttribute
                 android:rotation="-90"
                 android:scaleX="2"
                 android:scaleY="2"
-                motion:framePosition="50"
-                motion:motionTarget="@id/catImage" />
+                app:framePosition="50"
+                app:motionTarget="@id/catImage" />
 
             <KeyAttribute
                 android:alpha="0"
-                motion:framePosition="100"
-                motion:motionTarget="@+id/catImage" />
+                app:framePosition="100"
+                app:motionTarget="@+id/catImage" />
         </KeyFrameSet>
     </Transition>
 
@@ -36,23 +36,23 @@
             <Layout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                motion:layout_constraintLeft_toLeftOf="parent"
-                motion:layout_constraintRight_toRightOf="parent"
-                motion:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
         </Constraint>
 
         <Constraint android:id="@+id/catText">
             <Layout
                 android:layout_width="150dp"
                 android:layout_height="50dp"
-                motion:layout_constraintBottom_toBottomOf="parent"
-                motion:layout_constraintLeft_toLeftOf="parent"
-                motion:layout_constraintRight_toRightOf="parent"
-                motion:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
             <CustomAttribute
-                motion:attributeName="textSize"
-                motion:customFloatValue="20" />
+                app:attributeName="textSize"
+                app:customFloatValue="20" />
         </Constraint>
 
     </ConstraintSet>
@@ -62,23 +62,23 @@
             <Layout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                motion:layout_constraintBottom_toBottomOf="parent"
-                motion:layout_constraintLeft_toLeftOf="parent"
-                motion:layout_constraintRight_toRightOf="parent" />
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent" />
         </Constraint>
 
         <Constraint android:id="@+id/catText">
             <Layout
                 android:layout_width="150dp"
                 android:layout_height="50dp"
-                motion:layout_constraintBottom_toBottomOf="parent"
-                motion:layout_constraintLeft_toLeftOf="parent"
-                motion:layout_constraintRight_toRightOf="parent"
-                motion:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
             <CustomAttribute
-                motion:attributeName="textSize"
-                motion:customFloatValue="32" />
+                app:attributeName="textSize"
+                app:customFloatValue="32" />
         </Constraint>
     </ConstraintSet>
 </MotionScene>

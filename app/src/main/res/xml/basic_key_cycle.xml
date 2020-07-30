@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:motion="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <Transition
-        motion:constraintSetEnd="@id/end"
-        motion:constraintSetStart="@id/start"
-        motion:duration="2600">
+        app:constraintSetEnd="@id/end"
+        app:constraintSetStart="@id/start"
+        app:duration="2600">
 
         <OnClick
-            motion:clickAction="toggle"
-            motion:targetId="@id/catImage" />
+            app:clickAction="toggle"
+            app:targetId="@id/catImage" />
 
         <KeyFrameSet>
             <KeyCycle
                 android:rotation="25"
-                motion:framePosition="50"
-                motion:motionTarget="@id/catImage"
-                motion:wavePeriod="1"
-                motion:waveShape="sin" />
+                app:framePosition="50"
+                app:motionTarget="@id/catImage"
+                app:wavePeriod="1"
+                app:waveShape="sin" />
         </KeyFrameSet>
     </Transition>
 
@@ -26,10 +26,10 @@
             <Layout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                motion:layout_constraintLeft_toLeftOf="parent"
-                motion:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
-            <Motion motion:pathMotionArc="startVertical" />
+            <Motion app:pathMotionArc="startVertical" />
         </Constraint>
     </ConstraintSet>
 
@@ -38,8 +38,8 @@
             <Layout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                motion:layout_constraintBottom_toBottomOf="parent"
-                motion:layout_constraintRight_toRightOf="parent" />
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toRightOf="parent" />
         </Constraint>
     </ConstraintSet>
 </MotionScene>

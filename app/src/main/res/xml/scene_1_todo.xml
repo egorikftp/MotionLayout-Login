@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:motion="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <Transition
-        motion:constraintSetEnd="@id/end"
-        motion:constraintSetStart="@id/start"
-        motion:duration="300">
+        app:constraintSetEnd="@id/end"
+        app:constraintSetStart="@id/start"
+        app:duration="300">
 
         <!--TODO add click-->
     </Transition>
@@ -13,19 +13,19 @@
     <ConstraintSet android:id="@+id/start">
         <Constraint android:id="@id/login_root">
             <Layout
-                motion:layout_constraintBottom_toBottomOf="parent"
-                motion:layout_constraintStart_toStartOf="parent"
-                motion:layout_constraintTop_toTopOf="parent"
-                motion:layout_constraintWidth_percent="0.9" />
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent="0.9" />
         </Constraint>
 
         <Constraint android:id="@+id/sign_up_root">
             <Layout
-                motion:layout_constraintBottom_toBottomOf="parent"
-                motion:layout_constraintEnd_toEndOf="parent"
-                motion:layout_constraintStart_toEndOf="@+id/login_root"
-                motion:layout_constraintTop_toTopOf="parent"
-                motion:layout_constraintWidth_percent="0.1" />
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/login_root"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent="0.1" />
         </Constraint>
     </ConstraintSet>
 

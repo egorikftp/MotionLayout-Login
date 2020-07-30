@@ -1,73 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
 <MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:motion="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <Transition
-        motion:constraintSetEnd="@id/end"
-        motion:constraintSetStart="@id/start">
+        app:constraintSetEnd="@id/end"
+        app:constraintSetStart="@id/start">
 
         <OnSwipe
-            motion:dragDirection="dragLeft"
-            motion:maxAcceleration="50"
-            motion:onTouchUp="autoComplete"
-            motion:touchAnchorId="@id/sign_up_root"
-            motion:touchAnchorSide="left" />
+            app:dragDirection="dragLeft"
+            app:maxAcceleration="50"
+            app:onTouchUp="autoComplete"
+            app:touchAnchorId="@id/sign_up_root"
+            app:touchAnchorSide="left" />
 
         <KeyFrameSet>
             <KeyAttribute
                 android:alpha="0"
-                motion:framePosition="30"
-                motion:motionTarget="@+id/login_email" />
+                app:framePosition="30"
+                app:motionTarget="@+id/login_email" />
 
             <KeyPosition
-                motion:framePosition="30"
-                motion:keyPositionType="pathRelative"
-                motion:motionTarget="@+id/login_email"
-                motion:percentX="0.5" />
+                app:framePosition="30"
+                app:keyPositionType="pathRelative"
+                app:motionTarget="@+id/login_email"
+                app:percentX="0.5" />
 
             <KeyAttribute
                 android:alpha="0"
-                motion:framePosition="30"
-                motion:motionTarget="@+id/login_password" />
+                app:framePosition="30"
+                app:motionTarget="@+id/login_password" />
 
             <KeyPosition
-                motion:framePosition="30"
-                motion:keyPositionType="pathRelative"
-                motion:motionTarget="@+id/login_password"
-                motion:percentX="0.5" />
+                app:framePosition="30"
+                app:keyPositionType="pathRelative"
+                app:motionTarget="@+id/login_password"
+                app:percentX="0.5" />
 
             <KeyAttribute
                 android:alpha="0"
-                motion:framePosition="10"
-                motion:motionTarget="@+id/forgot_password" />
+                app:framePosition="10"
+                app:motionTarget="@+id/forgot_password" />
 
             <KeyPosition
-                motion:framePosition="30"
-                motion:keyPositionType="pathRelative"
-                motion:motionTarget="@+id/forgot_password"
-                motion:percentX="0.5" />
+                app:framePosition="30"
+                app:keyPositionType="pathRelative"
+                app:motionTarget="@+id/forgot_password"
+                app:percentX="0.5" />
 
             <KeyAttribute
                 android:alpha="0"
-                motion:framePosition="70"
-                motion:motionTarget="@+id/sign_up_email" />
+                app:framePosition="70"
+                app:motionTarget="@+id/sign_up_email" />
 
             <KeyPosition
-                motion:framePosition="70"
-                motion:keyPositionType="pathRelative"
-                motion:motionTarget="@+id/sign_up_email"
-                motion:percentX="0.5" />
+                app:framePosition="70"
+                app:keyPositionType="pathRelative"
+                app:motionTarget="@+id/sign_up_email"
+                app:percentX="0.5" />
 
             <KeyAttribute
                 android:alpha="0"
-                motion:framePosition="70"
-                motion:motionTarget="@+id/sign_up_password" />
+                app:framePosition="70"
+                app:motionTarget="@+id/sign_up_password" />
 
             <KeyPosition
-                motion:framePosition="70"
-                motion:keyPositionType="pathRelative"
-                motion:motionTarget="@+id/sign_up_password"
-                motion:percentX="0.5" />
+                app:framePosition="70"
+                app:keyPositionType="pathRelative"
+                app:motionTarget="@+id/sign_up_password"
+                app:percentX="0.5" />
 
             <!--TODO add KeyAttribute and KeyPosition-->
 
@@ -79,9 +79,9 @@
             <Layout
                 android:layout_width="250dp"
                 android:layout_marginTop="70dp"
-                motion:layout_constraintEnd_toEndOf="@+id/sign_up_root"
-                motion:layout_constraintStart_toStartOf="@+id/sign_up_root"
-                motion:layout_constraintTop_toBottomOf="@+id/logo" />
+                app:layout_constraintEnd_toEndOf="@+id/sign_up_root"
+                app:layout_constraintStart_toStartOf="@+id/sign_up_root"
+                app:layout_constraintTop_toBottomOf="@+id/logo" />
 
             <PropertySet
                 android:alpha="0"
@@ -92,9 +92,9 @@
             <Layout
                 android:layout_width="250dp"
                 android:layout_marginTop="16dp"
-                motion:layout_constraintEnd_toEndOf="@+id/sign_up_root"
-                motion:layout_constraintStart_toStartOf="@+id/sign_up_root"
-                motion:layout_constraintTop_toBottomOf="@+id/sign_up_email" />
+                app:layout_constraintEnd_toEndOf="@+id/sign_up_root"
+                app:layout_constraintStart_toStartOf="@+id/sign_up_root"
+                app:layout_constraintTop_toBottomOf="@+id/sign_up_email" />
 
             <PropertySet
                 android:alpha="0"
@@ -107,9 +107,9 @@
             <Layout
                 android:layout_width="250dp"
                 android:layout_marginTop="70dp"
-                motion:layout_constraintEnd_toEndOf="@+id/login_root"
-                motion:layout_constraintStart_toStartOf="@+id/login_root"
-                motion:layout_constraintTop_toBottomOf="@+id/logo" />
+                app:layout_constraintEnd_toEndOf="@+id/login_root"
+                app:layout_constraintStart_toStartOf="@+id/login_root"
+                app:layout_constraintTop_toBottomOf="@+id/logo" />
 
             <PropertySet android:alpha="1" />
         </Constraint>
@@ -118,9 +118,9 @@
             <Layout
                 android:layout_width="250dp"
                 android:layout_marginTop="16dp"
-                motion:layout_constraintEnd_toEndOf="@+id/login_root"
-                motion:layout_constraintStart_toStartOf="@+id/login_root"
-                motion:layout_constraintTop_toBottomOf="@+id/login_email" />
+                app:layout_constraintEnd_toEndOf="@+id/login_root"
+                app:layout_constraintStart_toStartOf="@+id/login_root"
+                app:layout_constraintTop_toBottomOf="@+id/login_email" />
 
             <PropertySet android:alpha="1" />
         </Constraint>
@@ -130,9 +130,9 @@
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="25dp"
-                motion:layout_constraintEnd_toEndOf="@+id/login_password"
-                motion:layout_constraintStart_toStartOf="@+id/login_password"
-                motion:layout_constraintTop_toBottomOf="@id/login_password" />
+                app:layout_constraintEnd_toEndOf="@+id/login_password"
+                app:layout_constraintStart_toStartOf="@+id/login_password"
+                app:layout_constraintTop_toBottomOf="@id/login_password" />
 
             <PropertySet android:alpha="1" />
         </Constraint>
@@ -144,13 +144,13 @@
             android:layout_marginTop="32dp">
 
             <Layout
-                motion:layout_constraintEnd_toStartOf="@+id/sign_up_root"
-                motion:layout_constraintStart_toStartOf="@+id/login_root"
-                motion:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintEnd_toStartOf="@+id/sign_up_root"
+                app:layout_constraintStart_toStartOf="@+id/login_root"
+                app:layout_constraintTop_toTopOf="parent" />
 
             <CustomAttribute
-                motion:attributeName="crossfade"
-                motion:customFloatValue="0" />
+                app:attributeName="crossfade"
+                app:customFloatValue="0" />
         </Constraint>
 
         <Constraint
@@ -159,17 +159,17 @@
             android:layout_height="50dp">
 
             <Layout
-                motion:layout_constraintBottom_toBottomOf="parent"
-                motion:layout_constraintEnd_toEndOf="@+id/login_root"
-                motion:layout_constraintStart_toStartOf="parent"
-                motion:layout_constraintTop_toBottomOf="@id/forgot_password"
-                motion:layout_constraintVertical_bias="0.6" />
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/login_root"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/forgot_password"
+                app:layout_constraintVertical_bias="0.6" />
 
             <Transform android:rotation="0" />
 
             <CustomAttribute
-                motion:attributeName="textSize"
-                motion:customFloatValue="36" />
+                app:attributeName="textSize"
+                app:customFloatValue="36" />
         </Constraint>
 
         <Constraint
@@ -178,16 +178,16 @@
             android:layout_height="wrap_content">
 
             <Layout
-                motion:layout_constraintBottom_toBottomOf="parent"
-                motion:layout_constraintEnd_toEndOf="parent"
-                motion:layout_constraintStart_toStartOf="@id/sign_up_root"
-                motion:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@id/sign_up_root"
+                app:layout_constraintTop_toTopOf="parent" />
 
             <Transform android:rotation="-90" />
 
             <CustomAttribute
-                motion:attributeName="textSize"
-                motion:customFloatValue="16" />
+                app:attributeName="textSize"
+                app:customFloatValue="16" />
         </Constraint>
 
         <Constraint
@@ -196,10 +196,10 @@
             android:layout_height="match_parent">
 
             <Layout
-                motion:layout_constraintBottom_toBottomOf="parent"
-                motion:layout_constraintStart_toStartOf="parent"
-                motion:layout_constraintTop_toTopOf="parent"
-                motion:layout_constraintWidth_percent="0.9" />
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent="0.9" />
         </Constraint>
 
         <Constraint
@@ -208,11 +208,11 @@
             android:layout_height="match_parent">
 
             <Layout
-                motion:layout_constraintBottom_toBottomOf="parent"
-                motion:layout_constraintEnd_toEndOf="parent"
-                motion:layout_constraintStart_toEndOf="@+id/login_root"
-                motion:layout_constraintTop_toTopOf="parent"
-                motion:layout_constraintWidth_percent="0.1" />
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/login_root"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent="0.1" />
         </Constraint>
 
     </ConstraintSet>
@@ -222,9 +222,9 @@
             <Layout
                 android:layout_width="250dp"
                 android:layout_marginTop="70dp"
-                motion:layout_constraintEnd_toEndOf="@+id/sign_up_root"
-                motion:layout_constraintStart_toStartOf="@+id/sign_up_root"
-                motion:layout_constraintTop_toBottomOf="@+id/logo" />
+                app:layout_constraintEnd_toEndOf="@+id/sign_up_root"
+                app:layout_constraintStart_toStartOf="@+id/sign_up_root"
+                app:layout_constraintTop_toBottomOf="@+id/logo" />
 
             <PropertySet
                 android:alpha="1"
@@ -235,9 +235,9 @@
             <Layout
                 android:layout_width="250dp"
                 android:layout_marginTop="16dp"
-                motion:layout_constraintEnd_toEndOf="@+id/sign_up_root"
-                motion:layout_constraintStart_toStartOf="@+id/sign_up_root"
-                motion:layout_constraintTop_toBottomOf="@+id/sign_up_email" />
+                app:layout_constraintEnd_toEndOf="@+id/sign_up_root"
+                app:layout_constraintStart_toStartOf="@+id/sign_up_root"
+                app:layout_constraintTop_toBottomOf="@+id/sign_up_email" />
 
             <PropertySet
                 android:alpha="1"
@@ -250,9 +250,9 @@
             <Layout
                 android:layout_width="250dp"
                 android:layout_marginTop="70dp"
-                motion:layout_constraintEnd_toEndOf="@+id/login_root"
-                motion:layout_constraintStart_toStartOf="@+id/login_root"
-                motion:layout_constraintTop_toBottomOf="@+id/logo" />
+                app:layout_constraintEnd_toEndOf="@+id/login_root"
+                app:layout_constraintStart_toStartOf="@+id/login_root"
+                app:layout_constraintTop_toBottomOf="@+id/logo" />
 
             <PropertySet
                 android:alpha="0"
@@ -263,9 +263,9 @@
             <Layout
                 android:layout_width="250dp"
                 android:layout_marginTop="16dp"
-                motion:layout_constraintEnd_toEndOf="@+id/login_root"
-                motion:layout_constraintStart_toStartOf="@+id/login_root"
-                motion:layout_constraintTop_toBottomOf="@+id/login_email" />
+                app:layout_constraintEnd_toEndOf="@+id/login_root"
+                app:layout_constraintStart_toStartOf="@+id/login_root"
+                app:layout_constraintTop_toBottomOf="@+id/login_email" />
 
             <PropertySet
                 android:alpha="0"
@@ -278,9 +278,9 @@
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="25dp"
-                motion:layout_constraintEnd_toEndOf="@+id/login_password"
-                motion:layout_constraintStart_toStartOf="@+id/login_password"
-                motion:layout_constraintTop_toBottomOf="@id/login_password" />
+                app:layout_constraintEnd_toEndOf="@+id/login_password"
+                app:layout_constraintStart_toStartOf="@+id/login_password"
+                app:layout_constraintTop_toBottomOf="@id/login_password" />
 
             <PropertySet
                 android:alpha="0"
@@ -294,13 +294,13 @@
             android:layout_marginTop="32dp">
 
             <Layout
-                motion:layout_constraintEnd_toEndOf="parent"
-                motion:layout_constraintStart_toStartOf="@+id/sign_up_root"
-                motion:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/sign_up_root"
+                app:layout_constraintTop_toTopOf="parent" />
 
             <CustomAttribute
-                motion:attributeName="crossfade"
-                motion:customFloatValue="1" />
+                app:attributeName="crossfade"
+                app:customFloatValue="1" />
         </Constraint>
 
         <Constraint
@@ -309,16 +309,16 @@
             android:layout_height="wrap_content">
 
             <Layout
-                motion:layout_constraintBottom_toBottomOf="parent"
-                motion:layout_constraintEnd_toEndOf="@id/login_root"
-                motion:layout_constraintStart_toStartOf="@id/login_root"
-                motion:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@id/login_root"
+                app:layout_constraintStart_toStartOf="@id/login_root"
+                app:layout_constraintTop_toTopOf="parent" />
 
             <Transform android:rotation="-90" />
 
             <CustomAttribute
-                motion:attributeName="textSize"
-                motion:customFloatValue="16" />
+                app:attributeName="textSize"
+                app:customFloatValue="16" />
         </Constraint>
 
         <Constraint
@@ -327,17 +327,17 @@
             android:layout_height="50dp">
 
             <Layout
-                motion:layout_constraintBottom_toBottomOf="parent"
-                motion:layout_constraintEnd_toEndOf="@+id/sign_up_root"
-                motion:layout_constraintStart_toStartOf="@+id/sign_up_root"
-                motion:layout_constraintTop_toBottomOf="@id/sign_up_password"
-                motion:layout_constraintVertical_bias="0.6" />
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/sign_up_root"
+                app:layout_constraintStart_toStartOf="@+id/sign_up_root"
+                app:layout_constraintTop_toBottomOf="@id/sign_up_password"
+                app:layout_constraintVertical_bias="0.6" />
 
             <Transform android:rotation="0" />
 
             <CustomAttribute
-                motion:attributeName="textSize"
-                motion:customFloatValue="36" />
+                app:attributeName="textSize"
+                app:customFloatValue="36" />
         </Constraint>
 
         <Constraint
@@ -346,10 +346,10 @@
             android:layout_height="match_parent">
 
             <Layout
-                motion:layout_constraintBottom_toBottomOf="parent"
-                motion:layout_constraintStart_toStartOf="parent"
-                motion:layout_constraintTop_toTopOf="parent"
-                motion:layout_constraintWidth_percent="0.1" />
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent="0.1" />
         </Constraint>
 
         <Constraint
@@ -358,11 +358,11 @@
             android:layout_height="match_parent">
 
             <Layout
-                motion:layout_constraintBottom_toBottomOf="parent"
-                motion:layout_constraintEnd_toEndOf="parent"
-                motion:layout_constraintStart_toEndOf="@+id/login_root"
-                motion:layout_constraintTop_toTopOf="parent"
-                motion:layout_constraintWidth_percent="0.9" />
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/login_root"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent="0.9" />
         </Constraint>
     </ConstraintSet>
 </MotionScene>
