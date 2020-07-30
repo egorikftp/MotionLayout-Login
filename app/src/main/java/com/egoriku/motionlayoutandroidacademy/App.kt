@@ -67,7 +67,6 @@ class App : Application() {
                 ),
                 onItemSelected = {
                     Beagle.currentActivity?.run {
-                        Beagle.dismiss()
                         startActivity(Intent(this, MotionActivity::class.java).apply {
                             putExtra(LAYOUT_ID, it.value)
                         })
