@@ -20,13 +20,12 @@
         android:layout_height="wrap_content"
         android:background="@color/colorSignInSection" />
 
-    <!--TODO change to ImageFilterView (with ic_cat_with_glasses)-->
-    <androidx.constraintlayout.utils.widget.ImageFilterView
+    <!--TODO change to ImageFilterView (use ic_cat_with_glasses_white)-->
+    <ImageView
         android:id="@+id/logo"
         android:layout_width="130dp"
         android:layout_height="130dp"
-        android:src="@drawable/ic_cat_with_glasses"
-        app:altSrc="@drawable/ic_cat_with_glasses_white" />
+        app:srcCompat="@drawable/ic_cat_with_glasses" />
 
     <TextView
         android:id="@+id/login_text"
